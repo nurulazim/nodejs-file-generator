@@ -9,7 +9,12 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
   const products = adminData.products;
-  res.render('home', { pageTitle: 'Home', path: '/', report: null});
+  res.render('home', {
+    pageTitle: 'Home',
+    path: '/',
+    report: null,
+    file: false
+  });
 });
 
 // router.get('/', (req, res, next) => {

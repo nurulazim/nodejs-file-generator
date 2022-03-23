@@ -166,7 +166,8 @@ router.get('/generate-file', (req, res, next) => {
     formsCSS: true,
     productCSS: true,
     activeAddProduct: true,
-    report: null
+    report: null,
+    file: true
   });
   // res.statusCode = 302;
   // res.setHeader('Location', '/');
@@ -186,7 +187,8 @@ router.get('/report-file', (req, res, next) => {
       formsCSS: true,
       productCSS: true,
       activeAddProduct: true,
-      report: report
+      report: report,
+      file: true
     });
   });
 });
