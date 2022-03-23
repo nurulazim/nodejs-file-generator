@@ -106,3 +106,15 @@ main {
   background-color: #00695c;
   color: white;
 }
+
+.m-32 {
+  margin: 32px;
+}
+
+.m-16 {
+  margin: 16px;
+}
+
+.file-btn {
+  text-decoration: none;
+}

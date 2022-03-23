@@ -160,7 +160,7 @@ router.get('/generate-file', (req, res, next) => {
 
   var generatedStringToSave = generateStringForFile();
   fs.writeFileSync('message.txt', generatedStringToSave);
-  res.render('404', {
+  res.render('home', {
     pageTitle: 'Home',
     path: '/',
     formsCSS: true,
@@ -180,7 +180,7 @@ router.get('/download-file', (req, res, next) => {
 router.get('/report-file', (req, res, next) => {
   getReport().then(result => {
     var report = result;
-    res.render('404', {
+    res.render('home', {
       pageTitle: 'Home',
       path: '/',
       formsCSS: true,

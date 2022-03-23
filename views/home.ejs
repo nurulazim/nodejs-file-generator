@@ -1,0 +1,29 @@
+<%- include('includes/head.ejs') %>
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <div class="m-32">
+        <h1>Home</h1>
+        <p>Click on the generate file button to generate file with random objects</p>
+        <button><a class="file-btn" href="/admin/generate-file">Generate File</a></button>
+        <div style="display: flex;">
+            <p>Download Generated File:</p>
+            <a class="m-16" href="/admin/download-file">click here</a>
+        </div>
+        <br>
+        <button><a class="file-btn" href="/admin/report-file">Report</a></button>
+        <% if (report) { %>
+            <ul>
+                <li>Alphabetical String: <%= report.AlphabeticalString %></li>
+                <li>Integer Number: <%= report.Integer %></li>
+                <li>Real Number: <%= report.RealNumber %></li>
+                <li>AlphaNumeric: <%= report.AlphaNumeric %></li>
+            </ul>
+        <% } else { %>
+            <p>Click in the report button to view report of generated numbers</p>
+        <% } %>
+    </div>
+    
+
+<%- include('includes/end.ejs') %>
