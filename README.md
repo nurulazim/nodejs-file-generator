@@ -3,7 +3,7 @@ Generate four kind of random objects and store them in a file
 
 ## Dependencies
 
-You should have `Node.js` for this project. After cloning in your local machine navigate to the project folder and run `npm install`.
+You should have `Node.js` installed for this project. After cloning in your local machine navigate to the project folder and run `npm install`.
 
 ## Testing
 
